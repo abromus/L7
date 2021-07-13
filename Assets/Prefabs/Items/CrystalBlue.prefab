@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8281815312304854118}
   - component: {fileID: 8281815312304854119}
   - component: {fileID: 8281815312304854120}
+  - component: {fileID: 8719377060538777567}
+  - component: {fileID: 3729409261842381769}
   m_Layer: 0
   m_Name: CrystalBlue
   m_TagString: Untagged
@@ -140,5 +142,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2e2d42725e15af4b93835c4e7e42d95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8719377060538777567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8281815312304854115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dc132be87a88a2418997c85cf46f301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 1
+  _offsetY: 0.5
+--- !u!114 &3729409261842381769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8281815312304854115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad1c3087eaceea48a84630bd487a1aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

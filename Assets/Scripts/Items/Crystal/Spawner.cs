@@ -1,12 +1,13 @@
 using System.Collections;
+
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private Crystal _prefab;
-    
+    [SerializeField] private float _spawnDelay = 2f;
+
     private Crystal _crystal;
-    private const float _callTime = 2f;
 
     private void Start()
     {
@@ -15,15 +16,15 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator CreateCrystal()
     {
-        while(true)
+        while (true)
         {
-            if(_crystal == null)
+            if (_crystal == null)
             {
                 _crystal = Instantiate(_prefab, transform.position, Quaternion.identity);
                 _crystal.transform.parent = transform;
             }
 
-            yield return new WaitForSeconds(_callTime);
+            yield return new WaitForSeconds(_spawnDelay);
         }
     }
 }
